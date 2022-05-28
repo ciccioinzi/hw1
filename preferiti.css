@@ -1,0 +1,124 @@
+body {
+  background-color: black;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: black;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nome {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #1DB954;
+  margin: 15px;
+}
+
+#links {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+#links a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+#links a {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #1DB954;
+}
+
+header {
+  color: #1DB954;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+
+header h1 strong {
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+
+section {
+  background-color: rgb(111, 108, 116);
+  margin: 80px 130px;
+}
+
+#preferiti {
+  background-color: rgb(30, 215, 96);
+  color: black;
+  text-align: center;
+}
+
+#preferiti h1 {
+  padding-top: 15px;
+}
+
+#preferiti-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#preferiti-view .song {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.song p {
+  display: none;
+}
+
+.song a {
+  cursor: pointer;
+  margin-top: 3px;
+  font-size: 0.8rem;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
